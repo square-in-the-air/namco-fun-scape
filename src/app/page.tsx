@@ -1,10 +1,17 @@
-import Link from "next/link";
+import { getStoryblokApi } from "@/lib/storyblok";
+import { StoryblokStory } from "@storyblok/react/rsc";
 
-export default function Home() {
+export default async function Home() {
+  const { data } = await fetchData();
+
   return (
-    <main>
-      <h1>Home</h1>
-      <Link href="/location/london">London</Link>
-    </main>
+    <div className="page">
+      <StoryblokStory story={data.story} />
+    </div>
   );
+}
+
+export async function fetchData() {
+  const storyblokApi = getStoryblokApi();
+  return await storyblokApi.get(`cdn/stories/home`, { version: "draft" });
 }
