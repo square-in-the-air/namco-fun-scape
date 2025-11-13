@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-, "src/components/StoryblokProvider.jsx", "src/lib/storyblok.js"  ],
+, "src/components/StoryblokProvider.tsx", "src/lib/storyblok.ts"  ],
   "exclude": ["node_modules"]
 }
