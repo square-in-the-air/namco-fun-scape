@@ -1,10 +1,9 @@
 import { apiPlugin, storyblokInit } from '@storyblok/react/rsc';
 
-import Page from "@/components/layout/Page";
-
-import Feature from "@/components/blocks/Feature";
-import Grid from "@/components/blocks/Grid";
-import Teaser from "@/components/blocks/Teaser";
+import Page from "@/components/Page";
+import Feature from "@/components/Feature";
+import Grid from "@/components/Grid";
+import Teaser from "@/components/Teaser";
 
 export const getStoryblokApi = storyblokInit({
     accessToken: process.env.NEXT_PUBLIC_STORYBLOK_CONTENT_API_ACCESS_TOKEN,
