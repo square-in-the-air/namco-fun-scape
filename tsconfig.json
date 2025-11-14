@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-, "src/components/Page.jsx"  ],
+, "src/components/Page.tsx", "src/components/StoryblokProvider.tsx", "src/components/Teaser.tsx", "src/components/Feature.tsx"  ],
   "exclude": ["node_modules"]
 }
