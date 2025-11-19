@@ -1,0 +1,12 @@
+@use "./tokens" as *;
+
+/// Mobile-first media query: applies styles from the given breakpoint and up
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "No value found for breakpoint `#{$breakpoint}`.";
+  }
+}
