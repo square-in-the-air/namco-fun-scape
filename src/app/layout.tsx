@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import StoryblokProvider from "@/components/StoryblokProvider";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "Namco Funscape - Arcade Games, Fun & Entertainment",
@@ -15,7 +16,10 @@ export default function RootLayout({
   return (
     <StoryblokProvider>
       <html lang="en">
-        <body>{children}</body>
+        <body>
+          {children}
+          <SpeedInsights />
+        </body>
       </html>
     </StoryblokProvider>
   );
