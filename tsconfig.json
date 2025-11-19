@@ -28,7 +28,11 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
-    "**/*.mts"
-, "src/components/Page.tsx", "src/components/StoryblokProvider.tsx", "src/components/Teaser.tsx", "src/components/Feature.tsx"  ],
+    "**/*.mts",
+    "src/components/blocks/Page.tsx",
+    "src/components/StoryblokProvider.tsx",
+    "src/components/blocks/Teaser.tsx",
+    "src/components/blocks/Feature.tsx"
+  ],
   "exclude": ["node_modules"]
 }
