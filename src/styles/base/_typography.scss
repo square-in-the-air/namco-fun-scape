@@ -1,0 +1,47 @@
+@use "../abstracts/tokens" as *;
+
+// Root Font Size
+:root {
+  font-size: $fs--root;
+}
+
+// Base Typography
+html,
+body {
+  font-family: $ff--primary;
+}
+
+p {
+  font-size: $fs--0;
+  font-weight: $wg--700;
+}
+
+h1 {
+  font-size: $fs--1;
+  font-weight: $wg--700;
+}
+
+h2 {
+  font-size: $fs--2;
+  font-weight: $wg--700;
+}
+
+h3 {
+  font-size: $fs--3;
+  font-weight: $wg--700;
+}
+
+h4 {
+  font-size: $fs--4;
+  font-weight: $wg--700;
+}
+
+h5 {
+  font-size: $fs--5;
+  font-weight: $wg--700;
+}
+
+h5 {
+  font-size: $fs--5;
+  font-weight: $wg--700;
+}
